@@ -2,15 +2,15 @@ package Sort;
 
 import java.util.Arrays;
 
-public class SelectionSort implements SortAlghoritm{
+public class SelectionSort implements SortAlghoritm {
 
     @Override
     public String sortAlghtorim(int[] arr) {
-        System.out.println(Arrays.toString(arr));
-        for(int left = 0; left < arr.length; left++){
+
+        for (int left = 0; left < arr.length; left++) {
             int minInd = left;
-            for(int i = left; i < arr.length; i++){
-                if(arr[i] < arr[minInd]){
+            for (int i = left; i < arr.length; i++) {
+                if (arr[i] < arr[minInd]) {
                     minInd = i;
                 }
             }

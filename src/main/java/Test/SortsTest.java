@@ -9,16 +9,24 @@ import java.util.Arrays;
 
 public class SortsTest {
 
+    int[] arr = {1, 3, 45, 2};
+    int[] result = {1, 2, 3, 45};
 
-    @Before
-    public void arrays(){
-    }
 
     @Test
     public void bubleSortTest() {
-        int[] result = {1,2,3,45};
-        int[] arr = {1,3,45,2};
+
         BubleSort bubleSort = new BubleSort();
         Assert.assertEquals(Arrays.toString(result), bubleSort.sortAlghtorim(arr));
     }
+
+    @Test
+    public void selectionSortTest(){
+        SelectionSort selectionSort = new SelectionSort();
+        Assert.assertEquals(Arrays.toString(result), selectionSort.sortAlghtorim(arr));
+
+
+    }
+
+
 }
