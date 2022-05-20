@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class BubleSort implements SortAlghoritm {
 
     @Override
-    public void sortAlghtorim(int[] arr) {
+    public int[] sortAlghtorim(int[] arr) {
         System.out.println(Arrays.toString(arr));
         boolean iter = true;
         while (iter) {
@@ -20,5 +20,6 @@ public class BubleSort implements SortAlghoritm {
             }
         }
         System.out.println(Arrays.toString(arr));
+        return arr;
     }
 }
