@@ -5,16 +5,20 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
-public class BubleSortTest extends UnitTests{
+import java.util.Arrays;
+
+public class SortsTest {
 
 
     @Before
-    
+    public void arrays(){
+    }
+
     @Test
-    public void SelectionSortTest() {
+    public void bubleSortTest() {
+        int[] result = {1,2,3,45};
+        int[] arr = {1,3,45,2};
         BubleSort bubleSort = new BubleSort();
-        int res = 2;
-        int uq = 1+1;
-        Assert.assertNotNull(res);
+        Assert.assertEquals(Arrays.toString(result), bubleSort.sortAlghtorim(arr));
     }
 }

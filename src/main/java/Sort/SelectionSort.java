@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class SelectionSort implements SortAlghoritm{
 
     @Override
-    public int[] sortAlghtorim(int[] arr) {
+    public String sortAlghtorim(int[] arr) {
         System.out.println(Arrays.toString(arr));
         for(int left = 0; left < arr.length; left++){
             int minInd = left;
@@ -18,7 +18,7 @@ public class SelectionSort implements SortAlghoritm{
             arr[left] = arr[minInd];
             arr[minInd] = tmp;
         }
-        System.out.println(Arrays.toString(arr));
-        return arr;
+        String arraySorted = Arrays.toString(arr);
+        return arraySorted;
     }
 }
