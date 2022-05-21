@@ -27,6 +27,12 @@ public class SortsTest {
 
 
     }
+    @Test
+    public void quickSortTest(){
+        QuickSort quickSort = new QuickSort();
+        Assert.assertEquals(Arrays.toString(result), quickSort.sortAlghtorim(arr));
 
+
+    }
 
 }
